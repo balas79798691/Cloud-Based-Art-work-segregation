@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudCanvas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🎨 CloudCanvas</h1>
+        <p>Cloud-Based Artwork Organizer</p>
+    </header>
+
+    <main>
+
+        <section class="upload-box">
+            <h2>Upload Artwork</h2>
+
+            <input type="file" id="artwork" accept="image/*">
+
+            <select id="category">
+                <option value="Portrait">Portrait</option>
+                <option value="Landscape">Landscape</option>
+                <option value="Abstract">Abstract</option>
+                <option value="Digital Art">Digital Art</option>
+                <option value="Sketch">Sketch</option>
+            </select>
+
+            <button onclick="uploadArtwork()">Upload Artwork</button>
+
+            <p id="message"></p>
+        </section>
+
+        <section>
+            <h2>My Artwork</h2>
+            <div id="gallery" class="gallery"></div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
